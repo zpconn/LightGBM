@@ -14,15 +14,15 @@ os:
 
 env:
   global:
-    - PYTHON_VERSION=3.6
+    - PYTHON_VERSION=3.7
   matrix:
     - TASK=regular
-    - TASK=mpi PYTHON_VERSION=2.7
+    - TASK=mpi
     - TASK=pylint
     - TASK=check-docs
     - TASK=if-else
-    - TASK=sdist PYTHON_VERSION=3.4
-    - TASK=bdist PYTHON_VERSION=3.5
+    - TASK=sdist
+    - TASK=bdist
     - TASK=gpu METHOD=source
     - TASK=gpu METHOD=pip
 
